@@ -2,12 +2,12 @@
 
 // >> exemplo utilizando 'var' | raramente ou muito especifico irá usar
 function iniciarTimeVar(iniciarJogo: boolean) {
-    var nome = "Messi e Amigos";
+    var nome: string = "Messi e Amigos";
     // >>> hoisting <<<
     // var cidade;
     if(iniciarJogo) {
         // cidade = 'em Uberlândia.';
-        var cidade = 'em Uberlândia.';
+        var cidade: string = 'em Uberlândia.';
     }
     console.log(`${nome} vão jogar ${cidade}`);
 }
@@ -18,8 +18,8 @@ console.log("---------------------------------------------------------");
 
 // >> exemplo utilizando 'let'
 function iniciarTimeLet(iniciarJogo: boolean) {
-    var nome = "Messi e Amigos";
-    let cidade = "em São Paulo";
+    var nome: string = "Messi e Amigos";
+    let cidade: string = "em São Paulo";
     if(iniciarJogo) {
        // let cidade = 'em Uberlândia.';
        cidade = 'em Uberlândia.';
@@ -33,8 +33,8 @@ console.log("---------------------------------------------------------");
 
 // >> exemplo utilizando 'const'
 function iniciarTimeConst(iniciarJogo: boolean) {
-    const nome = "Messi e Amigos";
-    let cidade = "em São Paulo";
+    const nome: string = "Messi e Amigos";
+    let cidade: string = "em São Paulo";
     if(iniciarJogo) {
        // let cidade = 'em Uberlândia.';
        cidade = 'em Uberlândia.';
